@@ -1,0 +1,37 @@
+{
+  "name": "BeautyCamera",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "start": "react-native start",
+    "build:apk": "cd android && ./gradlew assembleRelease",
+    "install:apk": "adb install android/app/build/outputs/apk/release/app-release.apk"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.73.2",
+    "react-native-vision-camera": "^3.8.2",
+    "react-native-worklets-core": "^0.3.0",
+    "react-native-reanimated": "^3.6.1",
+    "vision-camera-resize-plugin": "^2.0.3",
+    "@react-native-ml-kit/face-detection": "^1.0.0",
+    "@react-native-community/slider": "^4.5.0",
+    "react-native-fs": "^2.20.0",
+    "react-native-permissions": "^4.0.3",
+    "react-native-image-filter-kit": "^0.7.0",
+    "@react-native-async-storage/async-storage": "^1.21.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/runtime": "^7.23.8",
+    "@react-native/babel-preset": "0.73.19",
+    "@react-native/metro-config": "0.73.3",
+    "@react-native/typescript-config": "0.73.1",
+    "metro-react-native-babel-preset": "^0.77.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
